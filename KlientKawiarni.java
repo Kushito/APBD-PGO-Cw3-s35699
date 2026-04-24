@@ -27,4 +27,9 @@ public class KlientKawiarni {
         KlientKawiarni that = (KlientKawiarni) obj;
         return idKlienta == that.idKlienta;
     }
+
+    @Override
+    public String toString() {
+        return String.format("Klient #%d: %s %s (%s)", idKlienta, imie, nazwisko, email);
+    }
 }

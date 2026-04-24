@@ -39,4 +39,9 @@ public class ProduktMenu {
         ProduktMenu that = (ProduktMenu) obj;
         return kod.equals(that.kod);
     }
+
+    @Override
+    public String toString() {
+        return String.format("[%s] %-15s | Cena: %6.2f zł | Kat: %s", kod, nazwa, cena, kategoria);
+    }
 }
